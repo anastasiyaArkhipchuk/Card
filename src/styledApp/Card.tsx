@@ -3,19 +3,22 @@ import styled from "styled-components";
 export const Box = styled.div`
     background-color: rgba(0, 4, 17, 0.75);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
     min-height: 100vh;
-    @media screen and (min-width: 770px) {
-        flex-direction: column;
-    }
+    padding: 10px;
+    gap: 10px;
+   
 `
 export const Card = styled.div`
     width: 300px;
     min-height: 350px;
     background-color: white;
     border-radius: 15px;
-    padding: 10px 10px 22px
+    padding: 10px 10px 22px;
+    display: flex;
+    flex-flow: column wrap;
 `
 export const Image = styled.img`
     width: 100%;
